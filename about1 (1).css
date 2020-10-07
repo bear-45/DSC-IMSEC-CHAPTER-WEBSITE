@@ -1,0 +1,140 @@
+.team
+{
+margin:75px 0px;
+}
+
+h1
+{
+text-align:center;
+font-weight:bold;
+margin-bottom:20px;
+text-decoration:underline;
+font-size:45px;
+}
+
+.profile
+{
+display:inline-block;
+width:25%;
+height:auto;
+padding:10% 3% 10% 4.5%;
+
+}
+
+.profile h2
+{
+font-size:30px;
+font-weight:bold;
+margin-top:15px;
+text-align:center;
+}
+
+.profile h3
+{
+font-size:22px;
+font-weight:bold;
+margin-top:10px;
+
+text-align:center;
+position:relative;
+}
+
+.imgbox img
+{
+width:100%;
+height:75%;
+
+}
+
+.imgbox:hover ul
+{ 
+opacity:1;
+
+}
+
+.imgbox 
+{
+position:relative;
+}
+
+.imgbox ul li
+{
+padding:12px;
+margin:7px;
+display:inline-block;
+border:1px solid #fff;
+border-radius:50%;
+
+}
+
+.imgbox ul
+{
+left:50%;
+margin-right:-50%;
+transform:translate(-50%);
+
+padding:0;
+position:absolute;
+bottom:20px;
+display:block;
+z-index:1;
+
+height:25px;
+box-sizing:border-box;
+
+opacity:0;
+
+}
+
+
+.imgbox a
+{
+color:#fff;
+}
+
+
+
+.imgbox:hover img
+{
+filter:brightness(-10%);
+filter:contrast(60%);
+
+}
+
+.imgbox a:hover li
+{
+color:#007bff;
+border:1px solid #007bff;
+}
+
+
+
+
+.h1 img
+{
+width:100%;
+height:470px;
+}
+
+
+.h2 img
+{
+width:75px;
+height:65px;
+
+float:left;
+display: inline-block;
+}
+
+.h2 span
+{
+   display: inline-block; 
+    font-size:60px;
+}
+
+
+
+.h2
+{
+margin:75px 0px;
+}​
