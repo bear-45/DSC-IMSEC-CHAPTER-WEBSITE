@@ -1,35 +1,70 @@
-# DSC-IMSEC-CHAPTER-WEBSITE
+# Getting Started with Create React App
 
-<h1>WELCOME TO DSC_IMSEC</h1>
-<p>We are building a website for DSC-IMSEC . We are using HTML, CSS ,JS and bootstrap for frontend and Mongodb , Express.js and Nodejs for backend.</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<h1> What we are using </h1>
---We are using
-  <h2>For Front-end-:</h2>
-  <ul>
-  <li> HTML</li>
-  <li> CSS</li>
-  <li> JS</li>
-  <li> Bootstrap</li>
-  </ul>
-  <h2> For Back-end-:</h2>
-  <ul>
-  <li> MongoDB</li>
-  <li> Nodejs</li>
-  <li> Expressjs</li>
-  </ul>
- <h1> How to install Mongodb , nodejs and expressjs ?</h1>
-  <h2> Installation Steps for nodejs [windows 10]</h2>
-  <ul>
-  <li>Download the Windows installer from Nodejs.org.</li>
-  <li>Run the installer (the .msi file you downloaded in the previous step.)</li>
-  <li>Follow the prompts in the installer (Accept the license agreement, click the NEXT button a bunch of times and accept the default installation settings).</li>
-  <li>Restart your computer. You won’t be able to run Node.js until you restart your computer.</li>
-  </ul>
-  <h3>ALSO REQUIRED-</h3>
-  <p>Make sure you have Node and NPM installed by running simple commands to see what version of each is installed:</p>
-<ol>
-<li>Test Node. To see if Node is installed, open the Windows Command Prompt, Powershell or a similar command line tool, and type node -v. This should print the version number so you’ll see something like this v0.10.35.</li>
+## Available Scripts
 
-<li>Test NPM. To see if NPM is installed, type npm -v in Terminal. This should print the version number so you’ll see something like this 1.4.28</li>
-<li>Create a test file and run it. A simple way to test that node.js works is to create a simple JavaScript file: name it hello.js, and just add the code console.log('Node is installed!');. To run the code simply open your command line program, navigate to the folder where you save the file and type node hello.js. This will start Node.js and run the code in the hello.js file. You should see the output Node is installed!.</li>
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
