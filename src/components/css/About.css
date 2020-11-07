@@ -1,0 +1,11 @@
+#navbar-example{
+    position: relative;
+}
+#classheight{
+    overflow-y: scroll;
+    height: 300px;
+}
+.about_img{
+    min-width: 100%;
+    max-height: 280px;
+}
