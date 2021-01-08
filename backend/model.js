@@ -1,9 +1,10 @@
 const mongoose=require("mongoose")
+const validator=require("validator")
 
 const register= new mongoose.Schema({
     name:{
         type:String,
-        required:true
+        required:true,
     },
     email:{
         type:String,
@@ -23,6 +24,7 @@ const register= new mongoose.Schema({
         // required:true
     }
 });
+
 
 const Model=new mongoose.model("Register",register);
 

@@ -4,7 +4,6 @@ require("./connection")
 const cors=require("cors")
 const Model=require("./model");
 const Model1=require("./modelcon");
-const axios=require("axios")
 const port=process.env.PORT ||3001
 
 app.use(express.json())
@@ -26,9 +25,11 @@ app.get("/contact",(req,res)=>{
 
 app.post("/login",async(req,res)=>{
    try{
-    const password=req.body.password
-    const cpassword=req.body.cpassword
-    if(password===cpassword){
+    const email=req.body.email
+    const result= await Model.findOne({email:email})
+    console.log(result)
+    if(result==null){
+    
      const employee=new Model({
          name:req.body.name,
          email:req.body.email,
@@ -37,12 +38,14 @@ app.post("/login",async(req,res)=>{
          remember:req.body.remember
      })
      const result= await employee.save()
+     res.send("Yes")
      console.log(result);
-    }  
-    else{
-        res.send("password not match")
-    }
-   }
+}
+else
+{
+    res.send("no");
+}
+}
    catch(err){
        res.status(400).send(err);
    }
@@ -50,17 +53,19 @@ app.post("/login",async(req,res)=>{
 
 app.post("/sign",async(req,res)=>{
     try{
-    const email=req.body.email
-    const password=req.body.password
-    console.log(password)
+    const email=req.body.email;
+    const password=req.body.password;
+    // console.log(password)
     const result = await Model.findOne({email:email});
     // console.log(result)
-    if(result.password===password){
-        console.log("welcome")
-        res.send("welcome")
+    if(result==null){
+        res.send("yn")
     }
+    else if(result.password===password){
+        res.send("yes")
+ }
     else{
-        res.send("Password is invalid")
+        res.send("no")
     }
     }
     catch(err){
@@ -70,6 +75,12 @@ app.post("/sign",async(req,res)=>{
 
 app.post("/contact",async(req,res)=>{
     try{
+    const email=req.body.email
+    const check = await Model.findOne({email:email});
+    if(check==null){
+        res.send("no")
+    }
+    else{
      const result=new Model1({
          email:req.body.email,
          name:req.body.name,
@@ -77,9 +88,11 @@ app.post("/contact",async(req,res)=>{
          message:req.body.message
      })
     const cont= await result.save();
-    res.send(cont)
+    console.log(cont)
+    res.send("yes")
      
     }
+}
     catch(err){
         res.status(400).send(err);
     }
